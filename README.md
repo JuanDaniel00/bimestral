@@ -34,3 +34,24 @@
 
 #### Figura 9
 ![](img/Captura%20de%20pantalla%20de%202022-06-14%2010-29-03.png)
+
+#### Figura 10
+![](img/Screenshot_1.png)
+
+#### Figura 11
+![](img/Screenshot_2.png)
+
+#### Figura 12
+![](img/Screenshot_3.png)
+
+#### Figura 13
+![](img/Screenshot_4.png)
+
+#### Figura 14
+![](img/Screenshot_5.png)
+
+#### Figura 15
+![](img/Screenshot_6.png)
+
+#### Figura 16
+![](img/Screenshot_7.png)
