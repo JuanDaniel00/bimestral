@@ -64,3 +64,12 @@
 ![](img/Screenshot_11.png)
 #### Figura 20
 ![](img/Screenshot_12.png)
+
+#### Juego 1
+![](img/Screenshot_13.png)
+
+#### Juego 2
+![](img/Screenshot_14.png)
+
+#### Juego 3
+![](img/Screenshot_15.png)
