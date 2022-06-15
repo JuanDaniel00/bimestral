@@ -73,3 +73,6 @@
 
 #### Juego 3
 ![](img/Screenshot_15.png)
+
+#### Juego editado
+![](img/Captura%20de%20pantalla%20de%202022-06-15%2017-17-00.png)
