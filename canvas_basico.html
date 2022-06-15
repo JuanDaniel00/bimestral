@@ -19,25 +19,30 @@
                 var ctx = canvas.getContext("2d");
                 if(ctx)
                 {
-                    canvas.onmousedown = function(e)
-                    {
-                        var posCanvas = canvas.getBoundingClientRect();
-                        var x = e.clientX - posCanvas.left;
-                        var y = e.clientY - posCanvas.top;
-
-                        alert("izq "+posCanvas.left+"\n"+"der "+posCanvas.right+"\n"+"top "+ posCanvas.top+"\n"+"bot "+posCanvas.bottom+"\n"+"width "+posCanvas.width+"\n"+"height"+posCanvas.height+"\n"+"width "+canvas.width+"\n"+"height "+canvas.height+"\n"+"x "+x+"\n"+"y "+y+"\n"+"xx "+e.clientX+"\n"+"yy "+e.clientY);
+                    var imagen = new Image();
+                    function procesaImagen(){
+                        ctx.drawImage(imagen,10,10);
+                        var w = imagen.width;
+                        var h = imagen.height;
+                        var imagenData = ctx.getImageData(10,10,w,h);
+                        var data = imagenData.data;
+                        /*Escala de grises*/
+                        for(var i=0; i<data.length; i+=4){
+                            var gris = (data[i]+data[i+1]+data[i+2])/3
+                            data[i] = gris;    //rojo
+                            data[i+1] = gris;  //Verde
+                            data[i+2] = gris;  //Azul
                         }
-                    /*canvas.onmouseup = function(e){
-                        var x = e.clientX;
-                        var y = e.clientY;
-                        alert(x+" "+y);
-                    }*/
-                    /*canvas.onmousemove = function(e){
-                        var x = e.clientX;
-                        var y = e.clientY;
-                        alert(x+" "+y);
-                    }*/
-                }
+                        ctx.putImageData(imagenData, 250,10);
+                    }
+                    //
+                    imagen.src = "img/grito.png";
+                    imagen.onload = function(e){
+                        procesaImagen()
+                    }
+                        
+                    }
+                    
                 }
                 else{
                     alert("Error al crear el contexto")
